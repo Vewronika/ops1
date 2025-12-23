@@ -29,7 +29,7 @@ struct WatchMap {
 
 
 volatile sig_atomic_t terminate = 0;
-
+ 
 #define ERR(source) (perror(source), fprintf(stderr, "%s:%d\n", __FILE__, __LINE__), kill(0, SIGKILL), exit(EXIT_FAILURE))
 
 uint32_t pending_cookie = 0;
